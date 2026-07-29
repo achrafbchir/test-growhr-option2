@@ -160,16 +160,7 @@ export function PhotoGrid() {
   return (
     <div className="mx-auto w-full max-w-[1400px] px-4 py-6 sm:px-6 lg:px-8">
       <header className="mb-6 flex flex-col gap-4 border-b border-zinc-200 pb-4">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <button
-              type="button"
-              className="inline-flex h-10 items-center gap-1 rounded-lg border border-zinc-200 px-3 text-sm font-medium text-zinc-800"
-            >
-              Popular
-              <span aria-hidden="true">▾</span>
-            </button>
-          </div>
+        <div className="flex flex-wrap items-center justify-end gap-3">
           <button
             type="button"
             onClick={handleLogout}
@@ -178,8 +169,14 @@ export function PhotoGrid() {
             Log out
           </button>
         </div>
-
         <div className="flex flex-wrap items-center justify-between gap-3">
+          <button
+            type="button"
+            className="inline-flex h-10 items-center gap-1 rounded-lg border border-zinc-200 px-3 text-sm font-medium text-zinc-800"
+          >
+            Popular
+            <span aria-hidden="true">▾</span>
+          </button>
           <nav
             aria-label="Categories"
             className="flex max-w-full gap-4 overflow-x-auto pb-1 text-sm text-zinc-500"
