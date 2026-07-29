@@ -45,10 +45,10 @@ export default function LoginPage() {
                 <p className="text-sm text-white/85">Web Design Agency</p>
               </div>
               <div className="flex gap-2">
-                <span className="flex size-10 items-center justify-center rounded-full border border-white/70 text-lg">
+                <span className="flex size-10 items-center justify-center rounded-full border border-white/70 text-lg cursor-pointer">
                   ←
                 </span>
-                <span className="flex size-10 items-center justify-center rounded-full border border-white/70 text-lg">
+                <span className="flex size-10 items-center justify-center rounded-full border border-white/70 text-lg cursor-pointer">
                   →
                 </span>
               </div>
